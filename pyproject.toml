@@ -1,9 +1,10 @@
 [build-system]
-requires = ["setuptools>=61.2", "setuptools_scm[toml]>=3.4.1"]
+requires = ["setuptools>=61.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "jaraco.text"
+version = "3.14.0"
 authors = [
 	{ name = "Jason R. Coombs", email = "jaraco@jaraco.com" },
 ]
@@ -25,7 +26,6 @@ dependencies = [
 	"inflect",
 	"more_itertools",
 ]
-dynamic = ["version"]
 
 [project.urls]
 Source = "https://github.com/jaraco/jaraco.text"
@@ -56,5 +56,3 @@ doc = [
 
 	# local
 ]
-
-[tool.setuptools_scm]
