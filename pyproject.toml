@@ -1,14 +1,12 @@
 [build-system]
 requires = [
 	"setuptools>=77",
-	"setuptools_scm[toml]>=3.4.1",
-	# jaraco/skeleton#174
-	"coherent.licensed",
 ]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "jaraco.text"
+version = "4.3.0"
 authors = [
 	{ name = "Jason R. Coombs", email = "jaraco@jaraco.com" },
 ]
@@ -21,14 +19,13 @@ classifiers = [
 	"Programming Language :: Python :: 3 :: Only",
 ]
 requires-python = ">=3.10"
-license = "MIT"
+license = { text = "MIT" }
 dependencies = [
 	"jaraco.context >= 4.1",
 	"jaraco.functools",
 	"more_itertools",
-	"typer-slim",
+	"typer",
 ]
-dynamic = ["version"]
 
 [project.urls]
 Source = "https://github.com/jaraco/jaraco.text"
@@ -78,6 +75,3 @@ type = [
 
 	# local
 ]
-
-
-[tool.setuptools_scm]
